@@ -1,0 +1,11 @@
+1)
+from verkeerd gespelt
+geen group by maar wel sum 
+
+2)
+as micheal heeft geen num
+verkeerde quotes
+
+3)
+select fout
+op verkeerde manier gejoined

@@ -1,0 +1,6 @@
+select s.spelersnr, count(w.wedstrijdnr) AS aantal from spelers s 
+left outer join wedstrijden w using(spelersnr)
+group by s.spelersnr
+
+
+

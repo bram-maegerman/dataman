@@ -1,0 +1,4 @@
+naam text default 'TC Matic',
+unique (naam)
+
+foreign key (mid) on delete set null

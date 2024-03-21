@@ -1,0 +1,33 @@
+indexen: beinvloeden van de verwerkingstijd
+-> rijen worden in bestanden opgeslagen
+-> een bestand bestaat uit pagina's
+-> betreffende rij wordt opgehaald wanneer rij wordt opgehaald	
+
+B-tree: bineaire zoekboom -> beste voor >/</= operatoren
+-> gebalanceerd voor minimale vergelijkingen tot resultaat
+
+
+geclusterde index: in het bestand van de tabel een zelfgekozen gesorteerde index aanmaken
+-> nadeel: index moet herschreven worden bij een update of delete
+-> create index ... cluster ...
+
+waarom niet indexeren:
+-> neemt opslag in
+-> nadelig bij vaak aanpassende data
+
+Gin en Brin:
+gin: intressant bij veel dubbele waarden
+brin: voor grote geclusterde tabellen
+
+performantie optimalizeren
+-> bij voorkeur UNION operator niet gebruiken
+-> tabel wordt meerdere keren doorlopen
+-> ook beter om met between te werken dan meerdere and's
+-> select componenten zou compact mogelijk maken bv. bij exists -> select '1'
+-> kies outer joins boven UNION
+-> tabelvolgorde kan een rol spele afhankelijk van tabelgrote
+
+-> explain legt het query plan uit
+
+
+
